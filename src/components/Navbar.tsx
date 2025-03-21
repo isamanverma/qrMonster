@@ -17,31 +17,33 @@ export default function Navbar() {
             height={40}
             className="rounded-md transition-transform duration-300 hover:scale-105"
           />
-          <p className="text-2xl font-medium text-gray-800">QRMonster</p>
+          <p className="hidden text-2xl font-medium text-gray-800 sm:block">
+            QRMonster
+          </p>
         </Link>
 
         {/* Buttons */}
         <div className="flex items-center gap-4">
-          {/* GitHub Button */}
+          {/* GitHub */}
           <Link
             href="https://github.com/isamanverma"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition-all hover:border-gray-700 hover:text-gray-900"
+            className="flex items-center gap-2 rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition-all hover:border-gray-700 hover:text-gray-900 sm:border-0 sm:px-2 sm:py-2"
           >
-            <Github size={18} />
-            GitHub
+            <Github size={20} />
+            <span className="hidden sm:inline">GitHub</span>
           </Link>
 
-          {/* LinkedIn Button */}
+          {/* LinkedIn */}
           <Link
             href="https://www.linkedin.com/in/aman-kumar-verma-/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-md border border-blue-300 px-4 py-2 text-sm font-medium text-blue-700 transition-all hover:border-blue-700 hover:text-blue-900"
+            className="flex items-center gap-2 rounded-md border border-blue-300 px-4 py-2 text-sm font-medium text-blue-700 transition-all hover:border-blue-700 hover:text-blue-900 sm:border-0 sm:px-2 sm:py-2"
           >
-            <Linkedin size={18} />
-            LinkedIn
+            <Linkedin size={20} />
+            <span className="hidden sm:inline">LinkedIn</span>
           </Link>
         </div>
       </div>
